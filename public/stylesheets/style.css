@@ -1,0 +1,55 @@
+body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#container {
+    width: 100px;
+    height: 100px;
+}
+#container > svg {
+    width: 100%;
+    display: block;
+}
+#verdict{
+	text-align: center;
+	vertical-align: middle;
+}
+
+th, td{
+	text-align: center;
+}
+
+img{
+	
+	float: left;
+}
+li
+{
+	height: 80px;
+}
+
+#ul_div{
+	width: 100%;
+	float: left;
+}
+#tweet_list_love,#tweet_list_hate
+{
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	display: inline-block;
+	width: 48%;
+}
+
+.list-group-item-heading, .list-group-item-text{
+	margin-left: 50px;
+}
+
+#love_bar,#hate_bar{
+	color: black;
+}

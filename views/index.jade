@@ -1,0 +1,34 @@
+extends layout
+
+block scripts
+  script(src='/socket.io/socket.io.js')
+  script(src='/javascripts/client.io.js')
+block content
+    // table to show various counts
+    table#table_values.table.table-hover
+      tr
+        th No. of Love tweets   
+        th No. of Hate tweets
+        th Total No. of tweets
+      tr
+        td(style='color: green') 0    
+        td(style='color: red') 0
+        td 0
+    br
+    // progress bar to show love and hate percentage
+    .progress
+        #love_bar.progress-bar.progress-bar-success.progress-bar-striped(style='width: 50%')
+          span#text_love 50%
+        #hate_bar.progress-bar.progress-bar-danger.progress-bar-striped(style='width: 50%') 
+          span#text_hate 50%
+    br
+    br
+    // Final answer to love or hate question
+    p#verdict
+      strong World is filled with Love!
+    br
+    br
+    // love and hate lists
+    div#ul_div
+      ul#tweet_list_love.list-group
+      ul#tweet_list_hate.list-group
